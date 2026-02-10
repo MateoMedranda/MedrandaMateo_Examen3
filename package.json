@@ -1,0 +1,19 @@
+{
+  "name": "examen-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "lint": "eslint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "eslint": "^9.39.2",
+    "express": "^5.2.1",
+    "jest": "^29.7.0"
+  }
+}
