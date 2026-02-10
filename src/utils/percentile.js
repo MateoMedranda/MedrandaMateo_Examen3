@@ -2,6 +2,10 @@
 
 class Calculadora {
     percentile(p, values) {
+        if(typeof p !== 'number'){
+            throw new TypeError('p debe ser un número');
+        }
+
         if (p < 0 || p > 100) {
             throw new RangeError('p debe estar entre 0 y 100');
         }

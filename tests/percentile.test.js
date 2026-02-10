@@ -16,3 +16,15 @@ test('Medranda Calcular percentile(50,[1,2,3,4]) → 2.00', () =>{
     let items = [1,2,3,4];
     expect(op.percentile(50, items)).toBe(2);
 });
+
+// test de error en el rango de p
+test('Medranda Calcular percentile(120,[1,2,3]) → Error', () =>{
+    let items = [1,2,3];
+    expect(() => op.percentile(120, items)).toThrow(RangeError);
+});
+
+// test de error en el tipo de dato de p
+test('Medranda Calcular percentile("fifty",[1,2,3]) → Error', () =>{
+    let items = [1,2,3];
+    expect(() => op.percentile("fifty", items)).toThrow(TypeError);
+});
