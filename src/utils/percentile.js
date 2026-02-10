@@ -1,3 +1,5 @@
+// Autor Mateo Medranda
+
 class Calculadora {
     percentile(p, values) {
         if (p < 0 || p > 100) {
